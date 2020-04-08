@@ -1,0 +1,2 @@
+/Users/isaertunga/Projects/DistractionTest/DistractionTest/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
+/Users/isaertunga/Projects/DistractionTest/DistractionTest/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache
