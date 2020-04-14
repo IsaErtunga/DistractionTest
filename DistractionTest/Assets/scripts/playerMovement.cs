@@ -25,7 +25,6 @@ public class playerMovement : MonoBehaviour
         {
             velocity.y = -2f;
         }
-        Debug.Log(velocity.y);
 
         //för att gå med WASD
         float x = Input.GetAxis("Horizontal");
