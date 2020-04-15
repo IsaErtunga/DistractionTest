@@ -3,9 +3,10 @@ using UnityEngine;
 
 public class AudioSourceMovement2 : MonoBehaviour
 {
-    private float rotationSpeed = 1.5f;
-    private float radius = 0.5f;
+    private float rotationSpeed = 0.01f;
+    private float radius = 10.0f;
     private float angle;
+
     Vector3 originalPos;
 
     void Start()
@@ -17,7 +18,7 @@ public class AudioSourceMovement2 : MonoBehaviour
     void Update()
     {
         angle += rotationSpeed * Time.deltaTime;
-        var offset = new Vector3(Mathf.Sin(angle), 0f, Mathf.Cos(angle) * radius);
+        var offset = new Vector3(Mathf.Sin(angle) * radius, 0f, Mathf.Cos(angle) * radius);
         gameObject.transform.position = originalPos + offset;
     }
 }
