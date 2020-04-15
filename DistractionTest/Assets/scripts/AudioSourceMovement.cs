@@ -10,7 +10,7 @@ public class AudioSourceMovement : MonoBehaviour
     void Start()
     {
         //rb.useGravity = false;
-        originalPos = new Vector3(10.0f, 40.0f, 43.0f);
+        originalPos = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
     }
 
     // Update is called once per frame
