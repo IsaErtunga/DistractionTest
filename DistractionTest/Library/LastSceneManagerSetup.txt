@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/EditorUserSettings.unity
+- path: Assets/Scenes/musicdistraction.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
