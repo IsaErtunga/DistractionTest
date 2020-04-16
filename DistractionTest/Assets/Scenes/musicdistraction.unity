@@ -205,7 +205,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 381659680}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9cd0f83659d39d4491be21c54dc3421, type: 3}
+  m_Script: {fileID: 11500000, guid: 9fff0e7bf543e9a4eb07e3c55a68af53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!65 &381659682
@@ -262,7 +262,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 427254085}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9cd0f83659d39d4491be21c54dc3421, type: 3}
+  m_Script: {fileID: 11500000, guid: dc66e264beee51e4ab2ca2dcac8e88bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!65 &427254087
@@ -574,7 +574,17 @@ PrefabInstance:
         type: 3}
       propertyPath: sounds.Array.data[0].clip
       value: 
-      objectReference: {fileID: 8300000, guid: d1d43abb5cd9b4eefbd6d95b9f92abd0, type: 3}
+      objectReference: {fileID: 8300000, guid: 907f632cdcaf5fa42bfefbeb68789800, type: 3}
+    - target: {fileID: 4738203452402564038, guid: 04f98df855ca24ab3a713ed35b052dcb,
+        type: 3}
+      propertyPath: sounds.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: bb48a884179a8b14391748b9f9a7d37e, type: 3}
+    - target: {fileID: 4738203452402564038, guid: 04f98df855ca24ab3a713ed35b052dcb,
+        type: 3}
+      propertyPath: sounds.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: da3528eab8a269a4097ecd2e816a22d3, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04f98df855ca24ab3a713ed35b052dcb, type: 3}
 --- !u!1001 &2091493359
