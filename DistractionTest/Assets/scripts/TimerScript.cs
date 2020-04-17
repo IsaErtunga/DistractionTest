@@ -9,12 +9,18 @@ public class TimerScript : MonoBehaviour
     public Text stoppedTime;
     private float startTime;
     private bool stopTimer = false;
+    private bool startTimer = false;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        startTime = Time.time;
+    //void Start()
+    //{
+    //    startTime = Time.time;
 
+    //}
+
+    private void startWatch() {
+        startTimer = true;
+        startTime = Time.time;
     }
 
     // Update is called once per frame
@@ -25,15 +31,26 @@ public class TimerScript : MonoBehaviour
             return;
         }
 
-        float time_since_timer_started = Time.time - startTime;
-        string minutes = ((int)time_since_timer_started / 60).ToString();
-        string seconds = (time_since_timer_started % 60).ToString("f2");
-        timerText.text = minutes + ":" + seconds;
+        if (startTimer == true) {
+            float time_since_timer_started = Time.time - startTime;
+            string minutes = ((int)time_since_timer_started / 60).ToString();
+            string seconds = (time_since_timer_started % 60).ToString("f2");
+            timerText.text = minutes + ":" + seconds;
+
+        }
+
+        if (Input.GetKeyUp(KeyCode.Space)) {
+            startWatch();
+        }
+
+        if (Input.GetKeyUp(KeyCode.E)) {
+            StopTimer();
+        }
     }
 
     public void StopTimer()
     {
-        stopTimer = true;
         stoppedTime = timerText;
+        startTimer = false;
     }
 }

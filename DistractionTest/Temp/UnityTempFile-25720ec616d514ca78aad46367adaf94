@@ -291,6 +291,7 @@
 /define:CSHARP_7_3_OR_NEWER
 "Assets/scripts/AudioManager.cs"
 "Assets/scripts/DoorScript.cs"
+"Assets/scripts/ProblemInput.cs"
 "Assets/scripts/Sound.cs"
 "Assets/scripts/TimerScript.cs"
 "Assets/scripts/mouseLook.cs"
