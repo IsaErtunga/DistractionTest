@@ -9,8 +9,8 @@ using System.Security.Cryptography.X509Certificates;
 public class mailSetup : MonoBehaviour
 {
     public string bodyMessage = "This is a test mofos";
-    private string recipientEmail = "distraction.test.answers@gmail.com"; //example
-    private string password = "enter password here"; //example
+    private string recipientEmail = "distraction.answers@gmail.com"; //example
+    private string password = "alexausamafriahannesisa"; //example
 
     public void sendEmail()
     {
