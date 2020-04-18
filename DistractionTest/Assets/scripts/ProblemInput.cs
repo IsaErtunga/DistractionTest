@@ -11,11 +11,16 @@ public class ProblemInput : MonoBehaviour
     // The input from the user
     public string answer;
 
+    public GameObject timer;
+
     // Index for current Problem
     static public int currentProblem = 0;
-    static public int amountOfProblems = 3;
+    public int amountOfProblems = 3;
     static public int currentScene = 0;
-    static public int amountOfScenes = 3;
+    public int amountOfScenes = 3;
+
+    //store values of timer in rooms. All times of the entire test are here.
+    static public float[,] times = new float[3, 3];
 
     // Correct Answers for problems syntax -> correctAnswers[ currentScene, currentProblem ]
     public int[,] correctAnswers = new int[,] {
@@ -26,6 +31,16 @@ public class ProblemInput : MonoBehaviour
     public InputField inputField;
     public GameObject input;
     public GameObject displayAnswer;
+
+
+
+    public void addValue()//add timer value to array 'times'
+    {
+        //times[currentScene, currentProblem] = StopTimer();
+
+        //Debug.Log(timer.testtt);
+    }
+
 
     void Update()
     {
@@ -56,6 +71,7 @@ public class ProblemInput : MonoBehaviour
         // Checks if answer is correct
         if (int.Parse(answer) == correctAnswers[currentScene, currentProblem])
         {
+            addValue();
             Debug.Log(answer);
             displayAnswer.GetComponent<Text>().text = "You answered : " + answer + " right!";
 
