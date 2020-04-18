@@ -10,6 +10,7 @@ public class TimerScript : MonoBehaviour
     private float startTime;
     private bool stopTimer = false;
     private bool startTimer = false;
+    float time_since_timer_started;
 
     // Start is called before the first frame update
     //void Start()
@@ -18,33 +19,33 @@ public class TimerScript : MonoBehaviour
 
     //}
 
-    private void startWatch() {
-        startTimer = true;
-        startTime = Time.time;
+    void Start() {
+        //startTimer = true;
+        //startTime = Time.time;
+        time_since_timer_started = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        time_since_timer_started += Time.deltaTime;
+
         if(stopTimer)
         {
             return;
         }
 
-        if (startTimer == true) {
-            float time_since_timer_started = Time.time - startTime;
+
+        if (gameObject.activeSelf == true) {
+
             string minutes = ((int)time_since_timer_started / 60).ToString();
             string seconds = (time_since_timer_started % 60).ToString("f2");
             timerText.text = minutes + ":" + seconds;
-
         }
 
-        if (Input.GetKeyUp(KeyCode.Space)) {
-            startWatch();
-        }
-
-        if (Input.GetKeyUp(KeyCode.E)) {
-            StopTimer();
+        if (gameObject.activeSelf == false) {
+            time_since_timer_started = 0;
         }
     }
 
