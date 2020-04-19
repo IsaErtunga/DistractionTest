@@ -5,32 +5,61 @@ using UnityEngine;
 public class CrowdMovement : MonoBehaviour
 {
     static Animator anim;
-    private Rigidbody rb;
-    public float speed = 10F;
-    private int WalkDirection;
+    public Rigidbody rb;
+    public float speed = 3F;
+    private Vector3 myVector;
+    private Collider target;
+
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
-        //ChooseDirection();
+        target = GetComponent<Collider>();
+        myVector = new Vector3(rb.velocity.x, rb.velocity.y, rb.velocity.z);
+        if(rb.name == "NPCR1Forward")
+        {
+            rb.velocity = myVector + Vector3.forward * speed;
+
+        }
+        if (rb.name == "NPCR1Back")
+        {
+            rb.velocity = myVector + Vector3.back * speed;
+        }
+        if (rb.name == "NPCR2Left")
+        {
+            rb.velocity = myVector + Vector3.left * speed;
+        }
+        if (rb.name == "NPCR2Right")
+        {
+            rb.velocity = myVector + Vector3.right * speed;
+        }
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        gameObject.transform.position += new Vector3(0, 0, Time.deltaTime * speed);
-    }
-
-    /**public void ChooseDirection()
-    {
-        WalkDirection = Random.Range(0, 4);
-    }
-    */
     private void OnTriggerEnter(Collider other)
     {
-        gameObject.transform.rotation = new Quaternion(0, 90, 0, 0);
-        gameObject.transform.position += new Vector3(0, 0, -(Time.deltaTime * speed));
+        speed = speed * -1;
+        if (rb.name == "NPCR1Forward")
+        {
+            gameObject.transform.Rotate(0, 180, 0, Space.Self);
+            rb.velocity = Vector3.forward * speed;
+        }
+        if (rb.name == "NPCR1Back")
+        {
+            gameObject.transform.Rotate(0, rb.rotation.y - 180, 0, Space.Self);
+            rb.velocity = Vector3.back * speed;
+        }
+        if (rb.name == "NPCR2Left")
+        {
+            gameObject.transform.Rotate(0, rb.rotation.y * 270, 0, Space.Self);
+            rb.velocity = Vector3.left * speed;
+        }
+        if (rb.name == "NPCR2Right")
+        {
+            gameObject.transform.Rotate(0, rb.rotation.y * 270, 0, Space.Self);
+            rb.velocity = Vector3.right * speed;
+        }
     }
 
 
