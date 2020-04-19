@@ -18,10 +18,20 @@ public class ProblemInput : MonoBehaviour
     static public int amountOfScenes = 3;
 
     // Correct Answers for problems syntax -> correctAnswers[ currentScene, currentProblem ]
+
+    public static float[,] times = new float[3, 3];
+
     public int[,] correctAnswers = new int[,] {
              { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 }
     };
-    
+
+    public static void addTime(float time)
+    {
+        times[currentProblem, currentScene] = time;
+    }
+
+
+
     // References to objects in InputUI
     public InputField inputField;
     public GameObject input;
@@ -56,6 +66,8 @@ public class ProblemInput : MonoBehaviour
         // Checks if answer is correct
         if (int.Parse(answer) == correctAnswers[currentScene, currentProblem])
         {
+            TimerScript.StopTimer();
+
             Debug.Log(answer);
             displayAnswer.GetComponent<Text>().text = "You answered : " + answer + " right!";
 

@@ -11,23 +11,14 @@ public class FirstRoomScript : MonoBehaviour
     void Start()
     {
         ob.SetActive(false);
-        timer.SetActive(false);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void OnTriggerEnter (Collider other) {
         ob.SetActive(true);
-        timer.SetActive(true);
+        TimerScript.startTimer();
     }
 
     private void OnTriggerExit (Collider other) {
         ob.SetActive(false);
-        timer.SetActive(false);
     }
-
 }

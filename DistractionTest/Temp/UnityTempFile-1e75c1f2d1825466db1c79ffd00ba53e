@@ -293,6 +293,8 @@
 "Assets/PlayerMovement.cs"
 "Assets/mailSetup.cs"
 "Assets/scripts/AudioManager.cs"
+"Assets/scripts/DoorScript.cs"
+"Assets/scripts/FirstRoomScript.cs"
 "Assets/scripts/ProblemInput.cs"
 "Assets/scripts/Sound.cs"
 "Assets/scripts/TimerScript.cs"
