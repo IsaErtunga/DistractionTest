@@ -29,7 +29,6 @@ public class TimerScript : MonoBehaviour
 
     public static void StopTimer()
     {
-        Debug.Log("ut ur rummet");
         ProblemInput.addTime(time_since_timer_started);
         timerBool = false;
     }

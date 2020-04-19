@@ -25,17 +25,15 @@ public class ProblemInput : MonoBehaviour
              { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 }
     };
 
-    public static void addTime(float time)
-    {
-        times[currentProblem, currentScene] = time;
-    }
-
-
-
     // References to objects in InputUI
     public InputField inputField;
     public GameObject input;
     public GameObject displayAnswer;
+
+    public static void addTime(float time)
+    {
+        times[currentProblem, currentScene] = time;
+    }
 
     void Update()
     {
