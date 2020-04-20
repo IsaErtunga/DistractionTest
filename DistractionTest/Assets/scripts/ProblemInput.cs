@@ -32,7 +32,7 @@ public class ProblemInput : MonoBehaviour
 
     public static void addTime(float time)
     {
-        times[currentProblem, currentScene] = time;
+        times[currentScene, currentProblem] = time;
     }
 
     void Update()
@@ -64,8 +64,8 @@ public class ProblemInput : MonoBehaviour
         // Checks if answer is correct
         if (int.Parse(answer) == correctAnswers[currentScene, currentProblem])
         {
-            TimerScript.StopTimer();
-
+            //TimerScript.StopTimer();
+            mailSetup.gameFinished();
             //doorlogic
             if (currentProblem == 0)
             {

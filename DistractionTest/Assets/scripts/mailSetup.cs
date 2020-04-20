@@ -8,11 +8,11 @@ using System.Security.Cryptography.X509Certificates;
 
 public class mailSetup : MonoBehaviour
 {
-    public string bodyMessage = "This is a test mofos";
-    private string recipientEmail = "distraction.answers@gmail.com"; //example
-    private string password = "alexausamafriahannesisa"; //example
+    public static string bodyMessage;
+    private static string recipientEmail = "distraction.answers@gmail.com"; 
+    private static string password = "alexausamafriahannesisa"; 
 
-    public void sendEmail()
+    public static void sendEmail()
     {
         MailMessage mail = new MailMessage();
         SmtpClient smtpServer = new SmtpClient("smtp.gmail.com");
@@ -36,10 +36,19 @@ public class mailSetup : MonoBehaviour
         smtpServer.Send(mail);
     }
 
-    private void Start()
+    public static void gameFinished()
     {
-        Debug.Log("start sending");
-        sendEmail();
-        Debug.Log("after sending");
+        ProblemInput.times[0, 0] = 1f;
+        ProblemInput.times[0, 1] = 2f;
+        ProblemInput.times[0, 2] = 3f;
+        ProblemInput.times[1, 0] = 4f;
+        ProblemInput.times[1, 1] = 5f; 
+        foreach (float element in ProblemInput.times)
+        {
+            mailSetup.bodyMessage +=  "#  #" + element.ToString();
+        }
+        mailSetup.sendEmail();
+
     }
+
 }
