@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class AudioSourceMovement2 : MonoBehaviour
 {
-    private float rotationSpeed = 0.01f;
-    private float radius = 10.0f;
+    private float rotationSpeed = 0.5f;
+    private float radius = 8.0f;
     private float angle;
 
     Vector3 originalPos;
