@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 16
+  controlID: 59
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 710, y: 492}
   m_MaxSize: {x: 18005, y: 14042}
   vertical: 0
-  controlID: 120
+  controlID: 58
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -351,20 +351,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/prefabs
+    - Assets/MASH Virtual/Assets/Mesh
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/prefabs
+  - Assets/MASH Virtual/Assets/Mesh
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Ausama\Documents\GitHub\DistractionTest\DistractionTest
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 62}
-    m_SelectedIDs: e2330000
-    m_LastClickedID: 13282
-    m_ExpandedIDs: 00000000bc330000be330000
+    scrollPos: {x: 0, y: 60}
+    m_SelectedIDs: d2330000
+    m_LastClickedID: 13266
+    m_ExpandedIDs: 00000000bc330000cc330000ce330000d8330000da330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -392,7 +392,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000bc330000be330000
+    m_ExpandedIDs: 00000000bc330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -573,9 +573,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 74.95113, y: 108.46622, z: 192.68439}
+    m_Target: {x: 117.32691, y: 165.20094, z: 296.07605}
     speed: 2
-    m_Value: {x: 74.95113, y: 108.46622, z: 192.68439}
+    m_Value: {x: 117.32691, y: 165.20094, z: 296.07605}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -621,13 +621,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.14873318, y: -0.698449, z: 0.15202951, w: -0.6834063}
+    m_Target: {x: -0.095224105, y: -0.67465675, z: 0.08842496, w: -0.7266871}
     speed: 2
-    m_Value: {x: -0.14769992, y: -0.69863796, z: 0.15097328, w: -0.6835911}
+    m_Value: {x: -0.095350794, y: -0.67352474, z: 0.08827662, w: -0.7276537}
   m_Size:
-    m_Target: 115.87264
+    m_Target: 169.44777
     speed: 2
-    m_Value: 110.88291
+    m_Value: 169.44777
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -683,21 +683,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 88bdffff9abdffff1ae5ffff2ce5ffff70fbffff
+      m_ExpandedIDs: 68dfffff70fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: OuterWall1
+        m_OriginalName: OuterWall1
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -8362
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
