@@ -7,33 +7,29 @@ public class TimerScript : MonoBehaviour
 {
     public Text timerText;
     public Text stoppedTime;
-    private float startTime;
-    private bool stopTimer = false;
+    static float time_since_timer_started;
+    static bool timerBool = false;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        startTime = Time.time;
+    public static void startTimer() {
 
+        timerBool = true;
+        time_since_timer_started = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(stopTimer)
-        {
-            return;
+        if (timerBool == true) {
+            time_since_timer_started += Time.deltaTime;
+            string minutes = ((int)time_since_timer_started / 60).ToString();
+            string seconds = (time_since_timer_started % 60).ToString("f2");
+            timerText.text = minutes + ":" + seconds;
         }
-
-        float time_since_timer_started = Time.time - startTime;
-        string minutes = ((int)time_since_timer_started / 60).ToString();
-        string seconds = (time_since_timer_started % 60).ToString("f2");
-        timerText.text = minutes + ":" + seconds;
     }
 
-    public void StopTimer()
+    public static void StopTimer()
     {
-        stopTimer = true;
-        stoppedTime = timerText;
+        ProblemInput.addTime(time_since_timer_started);
+        timerBool = false;
     }
 }

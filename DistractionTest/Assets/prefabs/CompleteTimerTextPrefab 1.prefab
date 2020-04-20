@@ -1063,9 +1063,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answer: 
-  inputField: {fileID: 4512237884034998289}
-  input: {fileID: 4512237883612385039}
-  displayAnswer: {fileID: 4512237883050268643}
+  inputField: {fileID: 0}
+  input: {fileID: 0}
+  displayAnswer: {fileID: 0}
 --- !u!1 &4512237884034998291
 GameObject:
   m_ObjectHideFlags: 0
@@ -1294,7 +1294,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7026437156182766651}
   - component: {fileID: 7026437156182766650}
-  - component: {fileID: 4512237883148961866}
   m_Layer: 0
   m_Name: firstRoomTrig
   m_TagString: Untagged
@@ -1329,20 +1328,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4512237883148961866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7026437156182766649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5af1927082a64701bfc12ae3336d3f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ob: {fileID: 8672970490614637878}
-  timer: {fileID: 2735029763385721451}
 --- !u!1 &7026437157255968734
 GameObject:
   m_ObjectHideFlags: 0
@@ -1353,7 +1338,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7026437157255968736}
   - component: {fileID: 7026437157255968735}
-  - component: {fileID: 4512237884061725300}
   m_Layer: 0
   m_Name: firstRoomTrig (2)
   m_TagString: Untagged
@@ -1388,20 +1372,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4512237884061725300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7026437157255968734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5af1927082a64701bfc12ae3336d3f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ob: {fileID: 663443707558714169}
-  timer: {fileID: 2735029763385721451}
 --- !u!1 &7026437157343511720
 GameObject:
   m_ObjectHideFlags: 0
@@ -1412,7 +1382,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7026437157343511722}
   - component: {fileID: 7026437157343511721}
-  - component: {fileID: 4512237882717148679}
   m_Layer: 0
   m_Name: firstRoomTrig (1)
   m_TagString: Untagged
@@ -1447,20 +1416,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4512237882717148679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7026437157343511720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5af1927082a64701bfc12ae3336d3f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ob: {fileID: 8672970491123388568}
-  timer: {fileID: 2735029763385721451}
 --- !u!1 &8526105848232859148
 GameObject:
   m_ObjectHideFlags: 0
@@ -1911,7 +1866,7 @@ GameObject:
   m_Component:
   - component: {fileID: 784750720481211918}
   m_Layer: 0
-  m_Name: CompleteTimerTextPrefab
+  m_Name: CompleteTimerTextPrefab 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
