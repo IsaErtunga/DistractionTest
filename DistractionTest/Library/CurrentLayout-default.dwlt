@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -308,9 +308,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 29.997425, y: -31.481606, z: 14.043834}
+    m_Target: {x: 31.02179, y: -32.397243, z: 23.916052}
     speed: 2
-    m_Value: {x: 29.997425, y: -31.481606, z: 14.043834}
+    m_Value: {x: 31.02179, y: -32.397243, z: 23.916052}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -416,9 +416,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 08fbffff2efbffff
+      m_SelectedIDs: c0f8ffff
+      m_LastClickedID: -1856
+      m_ExpandedIDs: 9af8ffffa8f8ffffb0f8ffffb8f8ffffc0f8ffffcaf8ffffd2f8ffffe0f8ffff1afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -511,18 +511,18 @@ MonoBehaviour:
       y: 21
       width: 773
       height: 413
-    m_Scale: {x: 1.0599452, y: 1.0599452}
-    m_Translation: {x: 391.14594, y: 202.33377}
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 386.5, y: 206.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -369.02466
-      y: -190.89078
-      width: 729.28296
-      height: 389.64276
+      x: -386.5
+      y: -206.5
+      width: 773
+      height: 413
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 966.25, y: 542.5}
@@ -570,20 +570,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/scripts
+    - Assets/audioclips
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/scripts
+  - Assets/audioclips
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\fribb\OneDrive\Skrivbord\Skolarbete\HCI\DistractionTest\DistractionTest
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 08350000
-    m_LastClickedID: 13576
-    m_ExpandedIDs: 00000000de340000
+    m_SelectedIDs: 14360000
+    m_LastClickedID: 13844
+    m_ExpandedIDs: 0000000004360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -611,7 +611,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000de340000
+    m_ExpandedIDs: 0000000004360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -638,7 +638,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
