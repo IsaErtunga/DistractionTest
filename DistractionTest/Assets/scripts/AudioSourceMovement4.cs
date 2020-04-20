@@ -12,7 +12,7 @@ public class AudioSourceMovement4 : MonoBehaviour {
     void Update () {
         gameObject.transform.position = gameObject.transform.position + new Vector3(-movementSpeed * Time.deltaTime, 0, 0);
 
-        if (gameObject.transform.position.x <= 2) {
+        if (gameObject.transform.position.x <= 15) {
             gameObject.transform.position = originalPos;
         }
     }

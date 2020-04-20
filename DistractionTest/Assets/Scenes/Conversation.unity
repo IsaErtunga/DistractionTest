@@ -141,6 +141,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ob: {fileID: 2113297275}
   timer: {fileID: 1345411446}
+--- !u!114 &118170083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118170079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5018bce6337a1486084bbce458fd889c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioSourceTrigger1: {fileID: 1760865173}
+  AudioSourceTrigger2: {fileID: 0}
 --- !u!1 &223146619
 GameObject:
   m_ObjectHideFlags: 0
@@ -182,7 +196,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 223146619}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -230,7 +244,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 223146619}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20, y: 40, z: 70}
+  m_LocalPosition: {x: 32.5, y: 40, z: 70}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -248,6 +262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7cdd09edac02498badf7c42b53a4825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerOb: {fileID: 918631124}
 --- !u!82 &223146625
 AudioSource:
   m_ObjectHideFlags: 0
@@ -262,16 +277,16 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 20
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -506,6 +521,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 631296239965338644, guid: b00945542003142ae96ea019c2f87dfe,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 51.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 631296239965338644, guid: b00945542003142ae96ea019c2f87dfe,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 64.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 631296239965338644, guid: b00945542003142ae96ea019c2f87dfe,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 784750720481211918, guid: b00945542003142ae96ea019c2f87dfe,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -693,7 +723,7 @@ BoxCollider:
   m_GameObject: {fileID: 905308735}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -704,7 +734,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 905308735}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -752,7 +782,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 905308735}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: 40, z: 85}
+  m_LocalPosition: {x: 13, y: 40, z: 85}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -780,20 +810,20 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 7ec95bd4461564a5db572f09b2613e17, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 130
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 20
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -826,7 +856,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -866,6 +896,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &918631124 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7811280341427384875, guid: 566e8d7f84cde4d07883daccfe348ba9,
+    type: 3}
+  m_PrefabInstance: {fileID: 267250628}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1078778304 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7026437157343511720, guid: b00945542003142ae96ea019c2f87dfe,
@@ -886,6 +922,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ob: {fileID: 486622931}
   timer: {fileID: 1345411446}
+--- !u!114 &1078778308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078778304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5018bce6337a1486084bbce458fd889c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioSourceTrigger1: {fileID: 223146619}
+  AudioSourceTrigger2: {fileID: 0}
 --- !u!1 &1084627414 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7026437157255968734, guid: b00945542003142ae96ea019c2f87dfe,
@@ -906,6 +956,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ob: {fileID: 431573755}
   timer: {fileID: 1345411446}
+--- !u!114 &1084627418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084627414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5018bce6337a1486084bbce458fd889c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioSourceTrigger1: {fileID: 905308735}
+  AudioSourceTrigger2: {fileID: 1471630807}
 --- !u!1 &1345411446 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2735029763385721451, guid: b00945542003142ae96ea019c2f87dfe,
@@ -942,7 +1006,7 @@ BoxCollider:
   m_GameObject: {fileID: 1471630807}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -953,7 +1017,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1471630807}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1001,7 +1065,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1471630807}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 34, y: 40, z: 100}
+  m_LocalPosition: {x: 56, y: 40, z: 100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1017,7 +1081,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7ec95bd4461564a5db572f09b2613e17, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1028,9 +1092,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 20
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -1063,7 +1127,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1162,7 +1226,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1253,7 +1317,7 @@ BoxCollider:
   m_GameObject: {fileID: 1760865173}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1264,7 +1328,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1760865173}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
