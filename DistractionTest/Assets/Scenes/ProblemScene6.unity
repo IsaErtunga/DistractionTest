@@ -3477,7 +3477,7 @@ RectTransform:
   m_GameObject: {fileID: 4464745146133636467}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 4464745147340079660}
   m_Father: {fileID: 4464745146144627789}
@@ -3861,7 +3861,7 @@ RectTransform:
   m_GameObject: {fileID: 4464745147109719273}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 4464745145990954599}
   - {fileID: 4464745146724783092}
@@ -3870,7 +3870,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -0.0076904297, y: 58}
+  m_AnchoredPosition: {x: -0.0076904297, y: 84}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!1 &4464745147109719273
@@ -4023,7 +4023,7 @@ MonoBehaviour:
   answer: 
   inputField: {fileID: 4464745147109719275}
   input: {fileID: 4464745146724783093}
-  displayAnswer: {fileID: 4464745146145917721}
+  displayAnswer: {fileID: 4464745147340079661}
   creditText: {fileID: 1877469818}
   resultText: {fileID: 1930260904}
 --- !u!4 &4464745147122897919
