@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/noisedistractions.unity
+- path: Assets/Scenes/ProblemScene3.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
