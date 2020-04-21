@@ -2,7 +2,7 @@
 
 public class AudioSourceMovement3 : MonoBehaviour
 {
-    private float movementSpeed = 3.5f;
+    private float movementSpeed = 4.0f;
     Vector3 originalPos1;
     Vector3 originalPos2;
     private bool forward = true;
