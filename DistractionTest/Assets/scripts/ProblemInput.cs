@@ -66,6 +66,15 @@ public class ProblemInput : MonoBehaviour
         {
             TimerScript.StopTimer();
 
+            //door logic
+            if (currentProblem == 0) {
+                DoorScript1.doorLocked = false;
+            }
+            if (currentProblem == 1) {
+                DoorScript2.doorLocked = false;
+            }
+
+
             Debug.Log(answer);
             displayAnswer.GetComponent<Text>().text = "You answered : " + answer + " right!";
 
