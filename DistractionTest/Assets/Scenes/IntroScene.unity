@@ -494,10 +494,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "I f\xF6ljande test kommer du l\xF6sa matte tal med huvudr\xE4kning medans
-    varierande distraktioner sker.\n\nF\xF6rs\xF6k att l\xF6sa talen s\xE5 snabbt
-    som m\xF6jligt och n\xE4r du \xE4r klar g\xE5r du vidare till n\xE4sta rum,\n\nSkriv
-    in siffror och klicka [ENTER] f\xF6r att skicka ditt svar.\n\nKlicka [SPACE]
-    f\xF6r att g\xE5 vidare"
+    varierande distraktioner sker. Se till ha h\xF6rlurar p\xE5 dig.\n\nF\xF6rs\xF6k
+    att l\xF6sa talen s\xE5 snabbt som m\xF6jligt och n\xE4r du \xE4r klar g\xE5r
+    du vidare till n\xE4sta rum,\n\nSkriv in siffror och klicka [ENTER] f\xF6r att
+    skicka ditt svar.\n\nKlicka [SPACE] f\xF6r att g\xE5 vidare"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -542,7 +542,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 282
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -566,12 +566,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 135.09937, w: -362.86993}
   m_textInfo:
     textComponent: {fileID: 1546094049}
-    characterCount: 286
+    characterCount: 314
     spriteCount: 0
-    spaceCount: 52
-    wordCount: 50
+    spaceCount: 58
+    wordCount: 56
     linkCount: 0
-    lineCount: 10
+    lineCount: 11
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
