@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 public class AudioSourceMovement4 : MonoBehaviour {
-    private float movementSpeed = 1.5f;
+    private float movementSpeed = 0;
     Vector3 originalPos;
 
     void Start () {
