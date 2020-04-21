@@ -38,14 +38,9 @@ public class mailSetup : MonoBehaviour
 
     public static void gameFinished()
     {
-        ProblemInput.times[0, 0] = 1f;
-        ProblemInput.times[0, 1] = 2f;
-        ProblemInput.times[0, 2] = 3f;
-        ProblemInput.times[1, 0] = 4f;
-        ProblemInput.times[1, 1] = 5f; 
         foreach (float element in ProblemInput.times)
         {
-            mailSetup.bodyMessage +=  "#  #" + element.ToString();
+            mailSetup.bodyMessage +=  " || " + element.ToString();
         }
         mailSetup.sendEmail();
 

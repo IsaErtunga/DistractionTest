@@ -15,12 +15,10 @@ public class ProblemInput : MonoBehaviour
     static public int currentProblem = 0;
     static public int amountOfProblems = 3;
     static public int currentScene = 0;
-    static public int amountOfScenes = 3;
+    static public int amountOfScenes = 7;
 
     // Correct Answers for problems syntax -> correctAnswers[ currentScene, currentProblem ]
-
     public static float[,] times = new float[3, 3];
-
     public int[,] correctAnswers = new int[,] {
              { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 }
     };
@@ -29,6 +27,11 @@ public class ProblemInput : MonoBehaviour
     public InputField inputField;
     public GameObject input;
     public GameObject displayAnswer;
+
+    //end game stuff
+    public GameObject creditText;
+    public GameObject resultText;
+
 
     public static void addTime(float time)
     {
@@ -59,13 +62,14 @@ public class ProblemInput : MonoBehaviour
         displayAnswer.GetComponent<Text>().text = "You answered : " + answer; 
     }
 
+    
+
     public void CheckAnswer()
     {
         // Checks if answer is correct
         if (int.Parse(answer) == correctAnswers[currentScene, currentProblem])
         {
-            //TimerScript.StopTimer();
-            mailSetup.gameFinished();
+            TimerScript.StopTimer();
             //doorlogic
             if (currentProblem == 0)
             {
@@ -104,8 +108,38 @@ public class ProblemInput : MonoBehaviour
             else
             {
                 // Display times, move to game end Scene
-                Debug.Log("You win your total time was ...");
+                mailSetup.gameFinished();
+                creditText.SetActive(true);
+                Destroy(inputField);
+                Destroy(input);
+                Destroy(displayAnswer);
+                resultText.GetComponent<TextMesh>().text = avgTimes();
             }
         }
+    }
+
+    private string avgTimes()
+    {
+        int i = 0;
+        float tot = 0f;
+        string text = "average rounded time in each chamber\nr1\tr2\tr3\tr4\tr5\t6\tr7\n";
+        
+        Debug.Log(text);
+        foreach (float element in times)
+        {
+            tot += element;
+            if ((i + 1) % amountOfProblems == 0)
+            {
+                Debug.Log(tot);
+                tot = Mathf.Round(tot / amountOfProblems);
+                Debug.Log(tot);
+                text += tot.ToString() + "\t";
+                tot = 0f;
+            }
+            i++;
+        }
+        Debug.Log(text);
+        Debug.Log("end");
+        return text;
     }
 }
