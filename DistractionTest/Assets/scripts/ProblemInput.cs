@@ -86,7 +86,8 @@ public class ProblemInput : MonoBehaviour
 
                 // Move to next scene, Scene must have name "ProblemSceneX" X being the number of the room
                 currentScene++;
-                SceneManager.LoadScene("ProblemScene" + currentScene.ToString());
+                SceneManager.LoadScene("LoadingScene");
+                //SceneManager.LoadScene("ProblemScene" + currentScene.ToString());
                 Debug.Log("Current scene: " + currentScene);
             }
 
