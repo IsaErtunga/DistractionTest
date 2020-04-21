@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DoorScript : MonoBehaviour
+public class DoorScript1 : MonoBehaviour
 {
     Animator anim;
+    public static bool doorLocked = true;
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        doorLocked = true;
     }
 
     // Update is called once per frame
@@ -19,7 +21,11 @@ public class DoorScript : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        anim.SetTrigger("opentrigger");
+        if (!doorLocked)
+        {
+            anim.SetTrigger("opentrigger");
+        }
+        
     }
 
     void OnTriggerExit(Collider other)
